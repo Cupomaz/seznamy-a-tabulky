@@ -1,3 +1,8 @@
+body {
+    font-family: sans-serif;
+    padding: 0 10%;
+}
+
 .uroven-1 {
     list-style-type: upper-roman;
 }
@@ -8,4 +13,44 @@
 
 table * {
     border: 1px black solid;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px 5px;
+}
+
+thead td, tfoot td {
+    background-color: rgb(207, 207, 207);
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    background-color: rgb(179, 62, 62);
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+h3 {
+    color: rgb(26, 26, 107);
+}
+
+caption {
+    background-color: rgb(43, 43, 43);
+    color: white;
+    padding: 5px 0;
+    margin: 10px 0;
+}
+
+dt {
+    font-weight: bold;
 }
