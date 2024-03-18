@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seznamy a tabulky</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Seznamy a tabulky</h1>
+    <h2>Tvorba seznamů</h2>
+    <h3>USPOŘÁDANÝ SEZNAM (ORDERED LIST)</h3>
+    <ol>
+      <li>Google Chrome</li>
+      <li>Internet Explorer</li>
+      <li>Mozilla Firefox</li>
+    </ol>
+    <h3>NEUSPOŘÁDANÝ SEZNAM (UNORDERED LIST)</h3>
+    <ul>
+      <li>
+        IP adresy (např. IPv4: 192.168.1.115, IPv6:
+        2cde:7a6e:9c3b:3d1a:a61a:2afe:cd38:5496)
+      </li>
+      <li>
+        DNS adresy (např.
+        <a target="_blank" href="https://www.sspu-opava.cz/cs/">sspu-opava.cz</a
+        >)
+      </li>
+      <li>
+        URL adresy (např.
+        https://moodle.sspu-opava.cz/mod/assign/view.php?id=8722)
+      </li>
+    </ul>
+    <h3>VNOŘENÝ SEZNAM</h3>
+    <ul>
+      <li>
+        Hardware
+        <ol class="uroven-1">
+          <li>
+            Základní jednotka
+            <ol class="uroven-2">
+              <li>
+                procesor (<abbr title="Central Processing Unit">CPU</abbr>)
+              </li>
+              <li>paměť (<abbr title="Random Access Memory">RAM</abbr>)</li>
+              <li>pevný disk (<abbr title="Hard Disk Drive">HDD</abbr>)</li>
+            </ol>
+          </li>
+
+          <li>
+            Vstupní zařízení
+            <ol class="uroven-2">
+              <li>klávesnice</li>
+              <li>myš</li>
+            </ol>
+          </li>
+
+          <li>
+            Výstupní zařízení
+            <ol class="uroven-2">
+              <li>monitor</li>
+              <li>tiskárna</li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+
+      <li>
+        Software
+        <ol class="uroven-1">
+          <li>
+            Základní programové vybavení
+            <ol class="uroven-2">
+              <li>operační systém</li>
+              <li>ovladač</li>
+              <li>firmware</li>
+            </ol>
+          </li>
+
+          <li>
+            Aplikace
+            <ol class="uroven-2">
+              <li>textový editor</li>
+              <li>prohlížeč</li>
+              <li>antivirový program</li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+    </ul>
+    <h3>POPISNÝ SEZMAN (DESCRIPTION LIST)</h3>
+    <dl>
+      <dt>Internet Society (ISOC)</dt>
+      <dd>
+        Mezinárodní organizace pro globální koordinaci a kooperaci v rámci
+        internetu.
+      </dd>
+
+      <dt>World Wide Web Consortium (W3C)</dt>
+      <dd>
+        Mezinárodní konsorcium, jehož členové společně s veřejností vyvíjejí
+        webové standardy pro službu WWW.
+      </dd>
+
+      <dt>Internet Assigned Numbers Authority (IANA)</dt>
+      <dd>
+        Organizace, která dohlíží celosvětově na přidělování IP adres, správu
+        kořenových zón DNS, definování typů médií pro MIME a další náležitosti
+        internetových protokolů.
+      </dd>
+    </dl>
+    <h2>Tvorba tabulek</h2>
+    <p>
+      Komplexní tabulka v HTML může být tvořena záhlavím, tělem a zápatím.
+      Pomocí atributů <b>colspan</b> a <b>rowspan</b> můžeme vytvořit sloučené
+      buňky, které přesahují přes více sloupců i řádků.
+    </p>
+    <table>
+      <caption>
+        Studijní obory na SŠPU Opava - školní rok 2023/24
+      </caption>
+      <thead>
+        <tr>
+          <td rowspan="2">Název oboru</td>
+          <td rowspan="2">Kód oboru</td>
+          <td rowspan="2">Počet tříd</td>
+          <td colspan="3">Počty žáků</td>
+        </tr>
+        <tr>
+          <td>Chlapci</td>
+          <td>Dívky</td>
+          <td>Celkem</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Informační technologie</td>
+          <td>18-20-M/01</td>
+          <td>4</td>
+          <td>116</td>
+          <td>10</td>
+          <td>126</td>
+        </tr>
+        <tr>
+          <td>Strojírenství</td>
+          <td>23-41-M/01</td>
+          <td>8</td>
+          <td>172</td>
+          <td>0</td>
+          <td>172</td>
+        </tr>
+        <tr>
+          <td>Umělecké obory</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
